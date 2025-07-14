@@ -29,6 +29,7 @@ public class RegionService {
 		EntityTransaction transaction=null;
 		try(EntityManager entitymanager=HibernateUtil.getentityManagerFactory().createEntityManager();){
 			transaction=entitymanager.getTransaction();
+			transaction.begin();
 			RegionEntity e=entitymanager.find(RegionEntity.class, region_id);
 			if(e!=null) {
 				e.setRegion_name(newregion_name);
@@ -42,6 +43,7 @@ public class RegionService {
 		EntityTransaction transaction=null;
 		try(EntityManager entitymanager=HibernateUtil.getentityManagerFactory().createEntityManager();){
 			transaction=entitymanager.getTransaction();
+			transaction.begin();
 			RegionEntity emp=entitymanager.find(RegionEntity.class,empId);
 			if(emp!=null) {
 				entitymanager.remove(emp);
