@@ -29,6 +29,7 @@ public class CountryService {
 		EntityTransaction transaction=null;
 		try(EntityManager entitymanager=HibernateUtil.getentityManagerFactory().createEntityManager();){
 			transaction=entitymanager.getTransaction();
+			transaction.begin();
 			CountryEntity con=entitymanager.find(CountryEntity.class, country_id);
 			if(con!=null) {
 				con.setCountry_name(country_name);
@@ -42,6 +43,7 @@ public class CountryService {
 		EntityTransaction transaction=null;
 		try(EntityManager entitymanager=HibernateUtil.getentityManagerFactory().createEntityManager();){
 			transaction=entitymanager.getTransaction();
+			transaction.begin();
 			CountryEntity c=entitymanager.find(CountryEntity.class,country_id);
 			if(c!=null) {
 				entitymanager.remove(c);
