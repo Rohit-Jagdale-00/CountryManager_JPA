@@ -89,6 +89,33 @@ Below are the dependencies required in your pom.xml:
 
 ```
 ---
+📦Persistence.xml
+```
+ <persistence-unit name="myPersistence" transaction-type="RESOURCE_LOCAL">
+        
+        <class>entity.RegionEntity</class>
+        <class>entity.CountryEntity</class>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/countryManager"/>
+            
+            <property name="jakarta.persistence.jdbc.user" value="postgres"/>
+            
+            <property name="jakarta.persistence.jdbc.password" value="123"/>
+            
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            
+            <property name="hibernate.show_sql" value="false"/>
+            
+            <property name="hibernate.format_sql" value="false"/>
+
+            <property name="jakarta.persistence.schema-generation.database.action" value="update"/>
+        </properties>
+    </persistence-unit>
+```
+---
 🖼️ Screenshot
 
 <img width="514" height="196" alt="Screenshot 2025-07-14 161150" src="https://github.com/user-attachments/assets/7892a904-63be-4738-a51d-0fa5c0c0065e" />
