@@ -88,7 +88,7 @@ public class Main {
 			}
 			break;
 		case 9:System.out.println("Exiting....");
-		System.exit(0);
+		sc.close();
 		break;
 		default:System.out.println("Invalid choice enter again");
 		}
