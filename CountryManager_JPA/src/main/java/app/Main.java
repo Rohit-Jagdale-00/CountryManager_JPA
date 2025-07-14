@@ -17,7 +17,6 @@ public class Main {
 		CountryService cservice = new CountryService();
 		RegionService rservice = new RegionService();
 		
-		System.out.println("\n|=*=*=*=*=*= Welcome to CountryHub =*=*=*=*=|\n");
 		while(true) 
 		{
 		
