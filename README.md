@@ -91,7 +91,8 @@ Below are the dependencies required in your pom.xml:
 ---
 🖼️ Screenshot
 
-<img width="517" height="230" alt="Screenshot 2025-07-14 161150" src="https://github.com/user-attachments/assets/ff086fa5-454f-4aca-afa1-c02a456e2960" />
+<img width="514" height="196" alt="Screenshot 2025-07-14 161150" src="https://github.com/user-attachments/assets/7892a904-63be-4738-a51d-0fa5c0c0065e" />
+
 
 ---
 📌 Contact Details
