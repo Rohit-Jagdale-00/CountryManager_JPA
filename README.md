@@ -33,7 +33,7 @@ Uses Hibernate with JPA for clean and object-oriented database interaction.
 
 ## 🗂️ Project Structure
 ```
-CountryCRUD_JPA
+CountryManager_JPA
 ├── src/
 │     ├── entity/
 │     │     ├── CountryEntity.java
