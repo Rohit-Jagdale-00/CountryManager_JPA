@@ -8,7 +8,6 @@ public class HibernateUtil {
 	private static final EntityManagerFactory entityManagerFactory;
 	static {
 		try {
-			//entityManagerFactory=Persistence.createEntityManagerFactory("myPersistence");
 			entityManagerFactory = Persistence.createEntityManagerFactory("myPersistence");
 
 		}catch(Throwable e) { throw new ExceptionInInitializerError(e);}
@@ -22,4 +21,4 @@ public class HibernateUtil {
 			entityManagerFactory.close();
 		}
 	}
-}//HibernateUtil
+}
